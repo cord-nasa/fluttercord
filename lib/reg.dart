@@ -1,5 +1,5 @@
 import 'package:cord/login.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; 
 
 class Registration extends StatelessWidget {
   const Registration({super.key});
@@ -9,6 +9,8 @@ class Registration extends StatelessWidget {
 TextEditingController name=TextEditingController();
 TextEditingController phno=TextEditingController();
 TextEditingController email=TextEditingController();
+TextEditingController pswd=TextEditingController();
+TextEditingController place=TextEditingController();
 final formkey=GlobalKey<FormState>();
 
 
@@ -85,6 +87,50 @@ final formkey=GlobalKey<FormState>();
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(20),
                     borderSide: BorderSide(color: Colors.blue),
+                  ),
+                ),
+              ),
+            ),
+             Padding(
+              padding: const EdgeInsets.all(18.0),
+              child: TextFormField(
+                controller:place,
+                validator:(value) {
+                 if (value==null||value.isEmpty) {
+                  return 'Please enter your Place';
+                 }
+                 },
+                decoration: InputDecoration(
+                  label: Text('Place'),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                    borderSide: BorderSide(color: Colors.green),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                    borderSide: BorderSide(color: Colors.green),
+                  ),
+                ),
+              ),
+            ),
+             Padding(
+              padding: const EdgeInsets.all(18.0),
+              child: TextFormField(
+                controller:pswd,
+                validator:(value) {
+                 if (value==null||value.isEmpty) {
+                  return 'Please enter your Password';
+                 }
+                 },
+                decoration: InputDecoration(
+                  label: Text('Password'),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                    borderSide: BorderSide(color: Colors.green),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                    borderSide: BorderSide(color: Colors.green),
                   ),
                 ),
               ),

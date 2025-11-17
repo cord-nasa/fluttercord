@@ -1,3 +1,4 @@
+import 'package:cord/home.dart';
 import 'package:flutter/material.dart';
 
 class Loginscreen extends StatelessWidget {
@@ -45,7 +46,9 @@ class Loginscreen extends StatelessWidget {
             ),
           ),
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder:(context) =>HomePage() ,));
+            },
             child: Text('login',style: TextStyle(color: Colors.white),),
             style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
           ),
