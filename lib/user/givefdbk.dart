@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class FeedbackPage extends StatefulWidget {
   const FeedbackPage({super.key});
 
@@ -91,15 +92,15 @@ class _FeedbackPageState extends State<FeedbackPage> {
     );
   }
 
-  // ---------- Same Components as ParcelBooking ----------
+  // ---------- UI Components ----------
 
   Widget _header(String text) => Padding(
         padding: const EdgeInsets.only(bottom: 6, top: 20),
-        child: Text(text,
-            style: const TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.w600,
-                color: Colors.black87)),
+        child: Text(
+          text,
+          style: const TextStyle(
+              fontSize: 15, fontWeight: FontWeight.w600, color: Colors.black87),
+        ),
       );
 
   Widget _inputField({

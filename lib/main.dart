@@ -1,13 +1,16 @@
-import 'package:cord/Reqparcel.dart';
-import 'package:cord/Reqride.dart';
-import 'package:cord/givefdbk.dart';
-import 'package:cord/login.dart';
-import 'package:cord/nrsttrvelers.dart';
-import 'package:cord/reg.dart';
-import 'package:cord/sendcomplaints.dart';
-import 'package:cord/trackride.dart';
-import 'package:cord/viewtravelroute.dart';
+import 'package:cord/user/Reqparcel.dart';
+import 'package:cord/user/Reqride.dart';
+import 'package:cord/user/givefdbk.dart';
+import 'package:cord/user/loginpage.dart';
+import 'package:cord/user/nrsttrvelers.dart';
+import 'package:cord/user/reg.dart';
+import 'package:cord/user/sendcomplaints.dart';
+import 'package:cord/user/trackride.dart';
+import 'package:cord/traveler/viewfeedback.dart';
+import 'package:cord/user/viewtravelroute.dart';
+import 'package:cord/traveler/viewearnings.dart';
 import 'package:flutter/material.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -22,24 +25,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a purple toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
+        
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Loginscreen()
+      home:Loginscreen()
 
     );
   }
