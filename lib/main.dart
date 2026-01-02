@@ -1,6 +1,8 @@
+import 'package:cord/traveler/home.dart';
 import 'package:cord/user/Reqparcel.dart';
 import 'package:cord/user/Reqride.dart';
 import 'package:cord/user/givefdbk.dart';
+import 'package:cord/user/home.dart';
 import 'package:cord/user/loginpage.dart';
 import 'package:cord/user/nrsttrvelers.dart';
 import 'package:cord/user/reg.dart';
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp(debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         
